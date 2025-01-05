@@ -2,83 +2,83 @@
 
 ## Project Overview
 
-This project involves performing Exploratory Data Analysis (EDA) on Play Store app reviews and related datasets to uncover key factors influencing app engagement and success. The analysis focuses on understanding trends, identifying outliers, and deriving actionable insights to improve app performance.
+  This project involves performing Exploratory Data Analysis (EDA) on Play Store app reviews and related datasets to uncover key factors influencing app engagement and success. The analysis focuses on understanding trends, identifying outliers, and deriving actionable insights to improve app performance.
 
 ## Problem Statement
 
-The goal is to analyze two datasets:
+  The goal is to analyze two datasets:
 
-Play Store Data: Contains app details like reviews, ratings, installs, and more.
+  Play Store Data: Contains app details like reviews, ratings, installs, and more.
 
-User Reviews: Contains user feedback, sentiment, and sentiment scores.
+  User Reviews: Contains user feedback, sentiment, and sentiment scores.
 
 ##Key objectives:
 
-Identify parameters influencing app engagement.
+  Identify parameters influencing app engagement.
 
-Highlight trends in ratings, installs, and reviews.
+  Highlight trends in ratings, installs, and reviews.
 
-Determine factors contributing to app success.
+  Determine factors contributing to app success.
 
 ## Steps Followed
 
 ### 1. Data Cleaning
 
-Removed duplicate rows based on the App column.
+  Removed duplicate rows based on the App column.
 
-Imputed missing values in columns like Rating and Type using median and mode.
+  Imputed missing values in columns like Rating and Type using median and mode.
 
-Standardized units for the Size column (all values in MB).
+  Standardized units for the Size column (all values in MB).
 
-Converted price values to numeric by removing $.
+  Converted price values to numeric by removing $.
 
 #### Added calculated columns:
 
-Revenue: Estimated as Installs * Price.
+  Revenue: Estimated as Installs * Price.
 
-Size_group: Categorized apps into size intervals.
+  Size_group: Categorized apps into size intervals.
 
-Sentiment Numeric: Mapped sentiments (Positive, Negative, Neutral) to numeric values.
+  Sentiment Numeric: Mapped sentiments (Positive, Negative, Neutral) to numeric values.
 
 ### 2. Data Visualization
 
-Correlation Heatmap: Analyzed relationships between variables.
+  #### Correlation Heatmap: Analyzed relationships between variables.
 
-Positive correlation between Reviews and Installs.
+  Positive correlation between Reviews and Installs.
 
-Slight negative correlation between Price and Installs.
+  Slight negative correlation between Price and Installs.
 
-Category Distribution:
+  Category Distribution:
 
-Most apps fall under "Family" and "Game" categories.
+  Most apps fall under "Family" and "Game" categories.
 
-"Games" and "Tools" are the most competitive.
+  "Games" and "Tools" are the most competitive.
 
-Content Rating Analysis:
+#### Content Rating Analysis:
 
-82% of apps are suitable for all age groups (rated "Everyone").
+  82% of apps are suitable for all age groups (rated "Everyone").
 
-4% are rated "Mature 17+".
+  4% are rated "Mature 17+".
 
-Size Group Analysis:
+#### Size Group Analysis:
 
-Most apps are in the 1-20 MB range.
+  Most apps are in the 1-20 MB range.
 
-Larger apps (>90 MB) tend to have higher popularity (reviews and installs).
+  Larger apps (>90 MB) tend to have higher popularity (reviews and installs).
 
 ### 3. Insights and Findings
 
-Free apps dominate the Play Store (92%).
+  Free apps dominate the Play Store (92%).
 
-Categories like "Games" and "Communication" have the highest installs.
+  Categories like "Games" and "Communication" have the highest installs.
 
-Paid apps generate revenue based on both price and install numbers.
+  Paid apps generate revenue based on both price and install numbers.
 
-Sentiment analysis reveals 64% positive, 22% negative, and 14% neutral reviews.
+  Sentiment analysis reveals 64% positive, 22% negative, and 14% neutral reviews.
 
-Apps with larger sizes (>90 MB) receive higher average reviews.
+  Apps with larger sizes (>90 MB) receive higher average reviews.
 
-Tools and Libraries
+  Tools and Libraries
 
 Python: Primary language for analysis.
 
@@ -102,25 +102,25 @@ How the Project Was Achieved
 
 #### Documentation: Recorded findings and visualizations to communicate results effectively.
 
-##Key Visualizations
+## Key Visualizations
 
-Correlation heatmaps.
+  Correlation heatmaps.
 
-Bar charts for category-wise installs and reviews.
+  Bar charts for category-wise installs and reviews.
 
-Sentiment distribution pie charts.
+  Sentiment distribution pie charts.
 
-Size group distribution histograms.
+  Size group distribution histograms.
 
 ## Conclusion
 
-Through EDA, several actionable insights were derived to aid app developers:
+  Through EDA, several actionable insights were derived to aid app developers:
 
-Focus on categories like "Games" and "Tools" for higher visibility.
+  Focus on categories like "Games" and "Tools" for higher visibility.
 
-Optimize app sizes to balance competition and popularity.
+  Optimize app sizes to balance competition and popularity.
 
-Address user concerns highlighted in negative reviews to improve sentiment.
+  Address user concerns highlighted in negative reviews to improve sentiment.
 
-By analyzing the Play Store data, we can better understand user preferences and make data-driven decisions to improve app engagement and success.
+  By analyzing the Play Store data, we can better understand user preferences and make data-driven decisions to improve app engagement and success.
 
